@@ -61,22 +61,25 @@ Debugging Legend.`;
     <div className="min-h-screen bg-black text-white font-body px-6 py-12">
       <div className="max-w-3xl mx-auto space-y-24">
         {/* HERO SECTION */}
-        <section className="space-y-6 opacity-0 animate-fadeIn relative">
-          <div className="absolute right-0 top-0">
+        <section className="space-y-6 opacity-0 animate-fadeIn">
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+            <div className="space-y-6">
+              <h1 className="text-5xl md:text-5xl font-bold text-yellow-400 font-display">
+                Happy Birthday, Marquis
+              </h1>
+
+              <pre className="text-green-400 text-lg whitespace-pre-wrap">
+                {displayedText}
+                <span className="animate-blink">|</span>
+              </pre>
+            </div>
+
             <img
               src={marquisImage}
               alt="Dev"
-              className="w-48 h-48 object-cover object-top border border-neutral-800"
+              className="w-48 h-48 object-cover object-top border border-neutral-800 shrink-0"
             />
           </div>
-          <h1 className="text-5xl md:text-5xl font-bold text-yellow-400 font-display">
-            Happy Birthday, Marquis
-          </h1>
-
-          <pre className="text-green-400 text-lg whitespace-pre-wrap">
-            {displayedText}
-            <span className="animate-blink">|</span>
-          </pre>
         </section>
         <p className="text-white opacity-0 animate-fadeIn delay-100">
           Today, I celebrate the brain behind the daily tutoring sessions and
