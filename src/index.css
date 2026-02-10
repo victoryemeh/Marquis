@@ -48,3 +48,34 @@
 .delay-500 {
   animation-delay: 0.5s;
 }
+
+@media (max-width: 640px) {
+  .birthday-page {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .birthday-hero {
+    position: relative;
+    padding-right: 10.5rem;
+  }
+
+  .birthday-hero-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .birthday-hero-text {
+    font-size: 0.95rem;
+  }
+
+  .birthday-hero-image {
+    width: 9.5rem;
+    height: 9.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

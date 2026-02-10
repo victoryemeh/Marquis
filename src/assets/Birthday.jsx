@@ -58,17 +58,17 @@ Debugging Legend.`;
   }, [index, fullText]);
 
   return (
-    <div className="min-h-screen bg-black text-white font-body px-6 py-12">
+    <div className="birthday-page min-h-screen bg-black text-white font-body px-6 py-12">
       <div className="max-w-3xl mx-auto space-y-24">
         {/* HERO SECTION */}
         <section className="space-y-6 opacity-0 animate-fadeIn">
-          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+          <div className="birthday-hero flex flex-col md:flex-row md:items-start md:justify-between gap-6">
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-5xl font-bold text-yellow-400 font-display">
+              <h1 className="birthday-hero-title text-5xl md:text-5xl font-bold text-yellow-400 font-display">
                 Happy Birthday, Marquis
               </h1>
 
-              <pre className="text-green-400 text-lg whitespace-pre-wrap">
+              <pre className="birthday-hero-text text-green-400 text-lg whitespace-pre-wrap">
                 {displayedText}
                 <span className="animate-blink">|</span>
               </pre>
@@ -77,7 +77,7 @@ Debugging Legend.`;
             <img
               src={marquisImage}
               alt="Dev"
-              className="w-48 h-48 object-cover object-top border border-neutral-800 shrink-0"
+              className="birthday-hero-image w-48 h-48 object-cover object-top border border-neutral-800 shrink-0"
             />
           </div>
         </section>
